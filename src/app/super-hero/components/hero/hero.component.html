@@ -1,0 +1,29 @@
+<h2>Heroes:</h2>
+<hr>
+
+<table id="heroes">
+  <tr>
+    <th *ngFor="let atributo of heroes[0] | keyvalue">
+      {{atributo.key}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let heroe of heroes">
+    <td *ngFor="let atributo of heroe | keyvalue">
+      {{atributo.value}}
+    </td>
+  </tr>
+
+</table>
+
+
+<br>
+<br>
+
+<span>modo lista:</span>
+
+<ul>
+    <li *ngFor="let heroe of heroes">
+        Nombre: {{heroe.nombre}} - Poder: {{heroe.poder}} - Salud: {{heroe.salud | number}}
+    </li>
+</ul>
