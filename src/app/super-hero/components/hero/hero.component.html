@@ -1,6 +1,5 @@
-<h2>Heroes:</h2>
+<h2>Heroes</h2>
 <hr>
-
 <table id="heroes">
   <tr>
     <th *ngFor="let atributo of heroes[0] | keyvalue">
@@ -15,15 +14,3 @@
   </tr>
 
 </table>
-
-
-<br>
-<br>
-
-<span>modo lista:</span>
-
-<ul>
-    <li *ngFor="let heroe of heroes">
-        Nombre: {{heroe.nombre}} - Poder: {{heroe.poder}} - Salud: {{heroe.salud | number}}
-    </li>
-</ul>

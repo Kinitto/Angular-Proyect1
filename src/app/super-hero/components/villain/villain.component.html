@@ -1,0 +1,16 @@
+<h2>Villains</h2>
+<hr>
+<table id="villains">
+  <tr>
+    <th *ngFor="let atributo of villains[0] | keyvalue">
+      {{atributo.key}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let villain of villains">
+    <td *ngFor="let atributo of villain | keyvalue">
+      {{atributo.value}}
+    </td>
+  </tr>
+
+</table>

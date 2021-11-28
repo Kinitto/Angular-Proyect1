@@ -1,21 +1,21 @@
-#heroes {
+#villains {
   font-family: Arial, Helvetica, sans-serif;
   width: 75%;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-#heroes td, #heroes th {
+#villains td, #villains th {
   border: 1px solid #ccc;
   padding: 8px;
 
 }
 
-#heroes tr:nth-child(even){background-color: #f2f2f2; }
+#villains tr:nth-child(even){background-color: #f2f2f2; }
 
-#heroes tr:hover {background-color: #ddd; }
+#villains tr:hover {background-color: #ddd; }
 
-#heroes th {
+#villains th {
   text-align: left;
   background-color: #3c6ae7;
   color: white;

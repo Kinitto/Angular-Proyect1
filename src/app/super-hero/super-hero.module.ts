@@ -4,13 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HeroService } from './services/hero-service.service';
 import { HeroComponent } from './components/hero/hero.component';
 import { SuperHeroComponent } from './super-hero.component';
+import { AddheroComponent } from './components/addhero/addhero.component';
+import { VillainComponent } from './components/villain/villain.component';
+import { VillainService } from './services/villain-service.service';
+import { AddvillainComponent } from './components/addvillain/addvillain.component';
 
 
 
 @NgModule({
   declarations: [
     HeroComponent,
-    SuperHeroComponent
+    SuperHeroComponent,
+    AddheroComponent,
+    VillainComponent,
+    AddvillainComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +27,8 @@ import { SuperHeroComponent } from './super-hero.component';
     SuperHeroComponent
   ],
   providers: [
-    HeroService
+    HeroService,
+    VillainService
   ]
 })
 export class SuperHeroModule { }

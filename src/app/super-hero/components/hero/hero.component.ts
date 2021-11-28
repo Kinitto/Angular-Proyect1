@@ -17,21 +17,10 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {
     this.obtenerHeroes();
-    this.crearHero();
   }
 
   private obtenerHeroes(): void {
     this.heroes = this.heroService.obtenerHeroes();
-  }
-
-  private crearHero(): void {
-    const hero: Hero = {
-      nombre: 'test',
-      poder: 'test',
-      salud: 123
-    }
-
-    this.agregarHero(hero);
   }
 
   private agregarHero(hero: Hero): void {
